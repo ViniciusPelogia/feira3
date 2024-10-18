@@ -12,7 +12,7 @@ const Cadastro = () => {
         const senha = event.target.password.value;
 
         try {
-            const response = await axios.post('http://localhost:8080/usuarios', {
+            const response = await axios.post('https://feira3-back.vercel.app/usuarios', {
                 nome,
                 senha
             });
